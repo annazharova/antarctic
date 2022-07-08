@@ -1,0 +1,20 @@
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-default-black;
+  background-color: $color-default-white;
+
+  &--white {
+    color: $color-default-white;
+    background-color:$color-default-black;
+  }
+
+  &--16 {
+    font-size: 16px;
+  }
+
+  &--18 {
+    font-size: 18px;
+  }
+}

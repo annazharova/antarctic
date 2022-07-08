@@ -6,33 +6,42 @@
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
-    <header class="header">
-      <img class="header__logo" src="img/svg/logo.svg" alt="" width="70" height="38">
-      <nav class="main-navigation">
+  <body class="page__body">
+    <header class="header container">
+      <svg class="header__logo" width="70" height="38">
+        <use href="img/sprite_auto.svg#logo"></use>
+      </svg>
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link">Преимущества</a>
+            <a class="main-navigation__link text text--16" href="#">Преимущества</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link">Направления</a>
+            <a class="main-navigation__link text  text--16" href="#">Направления</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link">Ближайшие круизы</a>
+            <a class="main-navigation__link text text--16" href="#">Ближайшие круизы</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link">Контакты</a>
+            <a class="main-navigation__link text text--16" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="page__main">
+    <main class="page__main container">
       <h1 class="title">Круизы в&nbsp;Антарктику</h1>
       <p class="lead">Волшебный мир айсбергов и пингвинов</p>
       <section class="travel">
-        <h2 class="subtitle">Путешествие на&nbsp;край Земли</h2>
-        <p class="text">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+        <div class="travel__wrapper">
+        <h2 class="travel__title subtitle">Путешествие на&nbsp;край Земли</h2>
+        <p class="text text--16">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p></div>
+        <picture>
+          <source media="(min-width: 1366px)" srcset="img/penguins.png 1x, img/penguins@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/penguins-tablet.png, img/penguins-tablet@2x.png 2x">
+          <img class="travel__img" src="img/penguins-mobile.png" srcset="img/penguins-mobile@2x.png 2x" width="560" height="301" alt="">
+        </picture>
       </section>
       <section class="advantages">
         <h2 class="subtitle">Преимущества</h2>
@@ -170,9 +179,9 @@
       </section>
       <section class="booking">
         <h2 class="subtitle">Раннее бронирование</h2>
-        <p class="text">Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и сэкономьте до&nbsp;50%</p>
+        <p class="text text--18">Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и сэкономьте до&nbsp;50%</p>
         <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <p class="form__lead">Оставьте заявку и мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+          <p class="form__lead text text--18">Оставьте заявку и мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
           <label class="form__label">
             <span class="visually-hidden">Введите имя</span>
             <input class="form__label" type="text" name="name" id="name" placeholder="Имя">
@@ -195,29 +204,31 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
 
-        <p class="contacts__lead">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
-        <p class="text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, 19/8</p>
-        <p class="text">
+        <p class="contacts__lead text text--18">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+        <p class="text text--16">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, 19/8</p>
+        <p class="text text--16">
           <a class="" href="tel:+78002000000">8-800-200-00-00</a>
         </p>
       </section>
     </main>
 
-    <footer class="footer">
-      <img class="footer__logo" src="img/svg/logo.svg" alt="" width="70" height="38">
+    <footer class="footer container">
+      <svg class="header__logo" width="70" height="38">
+        <use href="img/sprite_auto.svg#logo"></use>
+      </svg>
       <nav class="footer-navigation">
         <ul class="footer-navigation__list">
           <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Преимущества</a>
+            <a class="footer-navigation__link" href="#">Преимущества</a>
           </li>
           <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Направления</a>
+            <a class="footer-navigation__link" href="#">Направления</a>
           </li>
           <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Ближайшие круизы</a>
+            <a class="footer-navigation__link" href="#">Ближайшие круизы</a>
           </li>
           <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Контакты</a>
+            <a class="footer-navigation__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -236,5 +247,22 @@
         </ul>
       </section>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-navigation');
+      var navToggle = document.querySelector('.main-navigation__toggle');
+
+      navMain.classList.remove('main-navigation--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-navigation--opened')) {
+          navMain.classList.remove('main-navigation--opened');
+          navMain.classList.add('main-navigation--closed');
+        } else {
+          navMain.classList.add('main-navigation--opened');
+          navMain.classList.remove('main-navigation--closed');
+        }
+      });
+    </script>
   </body>
 </html>

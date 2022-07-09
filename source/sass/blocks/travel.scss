@@ -3,15 +3,18 @@
   display: grid;
   grid-template-columns: 512px 560px;
   column-gap: 88px;
+  margin-bottom: 120px;
 
   @media (max-width: $vp-tablet) {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    margin-bottom: 100px;
   }
 
   @media (max-width: $vp-mobile) {
     margin-top: 250px;
     grid-template-columns: 1fr;
+    margin-bottom: 65px;
   }
 }
 

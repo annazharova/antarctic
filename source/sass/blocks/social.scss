@@ -1,0 +1,39 @@
+.social {}
+
+.social__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: $vp-mobile) {
+    margin-left: -12px;
+  }
+}
+
+.social__item {}
+
+.social__link {
+  padding: 14px;
+  display: flex;
+
+  &:hover .social__img,
+  &:focus .social__img {
+    fill: $color-default-hover;
+  }
+  &:active .social__img {
+    fill: $color-default-active;
+  }
+
+  @media (max-width: $vp-tablet) {
+    padding: 12px;
+  }
+}
+
+.social__img {
+  fill: $color-default-white;
+
+  @media (max-width: $vp-tablet) {
+    height: 16px;
+  }}

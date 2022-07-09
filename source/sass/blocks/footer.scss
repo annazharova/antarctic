@@ -1,0 +1,14 @@
+.footer {
+  min-height: 138px;
+  color: $color-default-white;
+  background-color: $color-default-black;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  column-gap: 25px;
+  align-items: center;
+
+  @media (max-width: $vp-mobile) {
+    grid-template-columns: 1fr;
+    min-height: 283px;
+  }
+}

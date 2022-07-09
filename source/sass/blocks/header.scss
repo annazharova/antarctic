@@ -1,23 +1,39 @@
 .header {
-  background-image: url("../img/header.png");
+  background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-color: $color-default-black;
-  height: 650px;
+  min-height: 650px;
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
   background-size: cover;
   background-position: center center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header@2x.png");
+    background-size: cover;
+  }
+
   @media (max-width: $vp-tablet) {
     background-image: url("../img/header-tablet.png");
     padding-top: 30px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: none;
+      background-image: url("../img/header-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   @media (max-width: $vp-mobile) {
     background-image: url("../img/header-mobile.png");
     padding-top: 20px;
     height: 500px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-mobile@2x.png");
+      background-size: cover;
+    }
   }
 }
 

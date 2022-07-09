@@ -25,7 +25,10 @@
 .main-navigation__item {
   margin-bottom: 10px;
   display: flex;
-  padding-left: 14px;
+
+  @media (max-width: $vp-mobile) {
+    padding-left: 14px;
+  }
 }
 
 .main-navigation__link {
@@ -35,6 +38,16 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  height: fit-content;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-hover;
+    color: $color-default-white;
+  }
+  &:active {
+    background-color: $color-default-active;
+  }
 
   @media (max-width: $vp-tablet) {
     font-size: 14px;

@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <header class="header container">
+    <header class="header">
+      <div class="header__wrapper container">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
       <svg class="header__logo" width="70" height="38">
         <use href="img/sprite_auto.svg#logo"></use>
       </svg>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-        <button class="main-navigation__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link text text--16" href="#">Преимущества</a>
@@ -27,7 +28,7 @@
             <a class="main-navigation__link text text--16" href="#">Контакты</a>
           </li>
         </ul>
-      </nav>
+      </nav></div>
     </header>
 
     <main class="page__main">
@@ -80,13 +81,11 @@
                 <p class="cruise__text"> от&nbsp;11500 $</p>
               <button class="button cruise__button" type="button">Забронировать</button>
             </section>
-            <div class="cruises__img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/astoria.png 1x, img/catalog/astoria@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/astoria-tablet.png 1x, img/catalog/astoria-tablet@2x.png 2x">
-                <img src="img/catalog/astoria-mobile.png" srcset="img/catalog/astoria-mobile@2x.png 2x" width="260" height="386" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/catalog/astoria.png 1x, img/catalog/astoria@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/astoria-tablet.png 1x, img/catalog/astoria-tablet@2x.png 2x">
+              <img class="cruises__img" src="img/catalog/astoria-mobile.png" srcset="img/catalog/astoria-mobile@2x.png 2x" width="260" height="386" alt="">
+            </picture>
           </li>
           <li class="cruises__item">
             <section class="cruise">
@@ -101,13 +100,11 @@
                 <p class="cruise__text">от&nbsp;14500 $</p>
               <button class="button cruise__button" type="button">Забронировать</button>
             </section>
-            <div class="cruises__img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/minion.png 1x, img/catalog/minion@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/minion-tablet.png 1x, img/catalog/minion-tablet@2x.png 2x">
-                <img src="img/catalog/minion-mobile.png" srcset="img/catalog/minion-mobile@2x.png 2x" width="260" height="386" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/catalog/minion.png 1x, img/catalog/minion@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/minion-tablet.png 1x, img/catalog/minion-tablet@2x.png 2x">
+              <img class="cruises__img" src="img/catalog/minion-mobile.png" srcset="img/catalog/minion-mobile@2x.png 2x" width="260" height="386" alt="">
+            </picture>
           </li>
           <li class="cruises__item">
             <section class="cruise">
@@ -122,13 +119,11 @@
                 <p class="cruise__text">от&nbsp;14500 $</p>
               <button class="button cruise__button" type="button">Забронировать</button>
             </section>
-            <div class="cruises__img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/atlantis.png 1x, img/catalog/atlantis@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/atlantis-tablet.png 1x, img/catalog/atlantis-tablet@2x.png 2x">
-                <img src="img/catalog/atlantis-mobile.png" srcset="img/catalog/atlantis-mobile@2x.png 2x" width="260" height="386" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/catalog/atlantis.png 1x, img/catalog/atlantis@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/atlantis-tablet.png 1x, img/catalog/atlantis-tablet@2x.png 2x">
+              <img class="cruises__img" src="img/catalog/atlantis-mobile.png" srcset="img/catalog/atlantis-mobile@2x.png 2x" width="260" height="386" alt="">
+            </picture>
           </li>
           <li class="cruises__item">
             <section class="cruise">
@@ -143,13 +138,11 @@
                 <p class="cruise__text">от&nbsp;9700 $</p>
               <button class="button cruise__button" type="button">Забронировать</button>
             </section>
-            <div class="cruises__img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/odysseus.png 1x, img/catalog/odysseus@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/odysseus-tablet.png 1x, img/catalog/odysseus-tablet@2x.png 2x">
-                <img src="img/catalog/odysseus-mobile.png" srcset="img/catalog/odysseus-mobile@2x.png 2x" width="260" height="386" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/catalog/odysseus.png 1x, img/catalog/odysseus@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/odysseus-tablet.png 1x, img/catalog/odysseus-tablet@2x.png 2x">
+              <img class="cruises__img" src="img/catalog/odysseus-mobile.png" srcset="img/catalog/odysseus-mobile@2x.png 2x" width="260" height="386" alt="">
+            </picture>
           </li>
           <li class="cruises__item">
             <section class="cruise">
@@ -164,13 +157,11 @@
                 <p class="cruise__text">от&nbsp;18600 $</p>
               <button class="button cruise__button" type="button">Забронировать</button>
             </section>
-            <div class="cruises__img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/olympia.png 1x, img/catalog/olympia@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/olympia-tablet.png 1x, img/catalog/olympia-tablet@2x.png 2x">
-                <img src="img/catalog/olympia-mobile.png" srcset="img/catalog/olympia-mobile@2x.png 2x" width="260" height="386" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/catalog/olympia.png 1x, img/catalog/olympia@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/olympia-tablet.png 1x, img/catalog/olympia-tablet@2x.png 2x">
+              <img class="cruises__img" src="img/catalog/olympia-mobile.png" srcset="img/catalog/olympia-mobile@2x.png 2x" width="260" height="386" alt="">
+            </picture>
           </li>
           <li class="cruises__item">
             <section class="cruise">
@@ -185,13 +176,11 @@
                 <p class="cruise__text">от&nbsp;11700 $</p>
               <button class="button cruise__button" type="button">Забронировать</button>
             </section>
-            <div class="cruises__img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/aurora.png 1x, img/catalog/aurora@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/aurora-tablet.png 1x, img/catalog/aurora-tablet@2x.png 2x">
-                <img src="img/catalog/aurora-mobile.png" srcset="img/catalog/aurora-mobile@2x.png 2x" width="260" height="386" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/catalog/aurora.png 1x, img/catalog/aurora@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/aurora-tablet.png 1x, img/catalog/aurora-tablet@2x.png 2x">
+              <img class="cruises__img" src="img/catalog/aurora-mobile.png" srcset="img/catalog/aurora-mobile@2x.png 2x" width="260" height="386" alt="">
+            </picture>
           </li>
           <li class="cruises__item">
             <section class="cruise">
@@ -206,13 +195,11 @@
                 <p class="cruise__text">от&nbsp;12500 $</p>
               <button class="button cruise__button" type="button">Забронировать</button>
             </section>
-            <div class="cruises__img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/leonore.png 1x, img/catalog/leonore@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/leonore-tablet.png 1x, img/catalog/leonore-tablet@2x.png 2x">
-                <img src="img/catalog/leonore-mobile.png" srcset="img/catalog/leonore-mobile@2x.png 2x" width="260" height="386" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/catalog/leonore.png 1x, img/catalog/leonore@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/leonore-tablet.png 1x, img/catalog/leonore-tablet@2x.png 2x">
+              <img class="cruises__img" src="img/catalog/leonore-mobile.png" srcset="img/catalog/leonore-mobile@2x.png 2x" width="260" height="386" alt="">
+            </picture>
           </li>
           <li class="cruises__item">
             <section class="cruise">
@@ -227,13 +214,11 @@
                 <p class="cruise__text">от&nbsp;12300 $</p>
               <button class="button cruise__button" type="button">Забронировать</button>
             </section>
-            <div class="cruises__img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/minion.png 1x, img/catalog/minion@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/minion-tablet.png 1x, img/catalog/minion-tablet@2x.png 2x">
-                <img src="img/catalog/minion-mobile.png" srcset="img/catalog/minion-mobile@2x.png 2x" width="260" height="386" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/catalog/minion.png 1x, img/catalog/minion@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/minion-tablet.png 1x, img/catalog/minion-tablet@2x.png 2x">
+              <img class="cruises__img" src="img/catalog/minion-mobile.png" srcset="img/catalog/minion-mobile@2x.png 2x" width="260" height="386" alt="">
+            </picture>
           </li>
         </ul>
       </section>
@@ -277,7 +262,8 @@
       </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer">
+      <div class="footer__wrapper container">
       <svg class="header__logo" width="70" height="38">
         <use href="img/sprite_auto.svg#logo"></use>
       </svg>
@@ -322,7 +308,7 @@
             </a>
           </li>
         </ul>
-      </section>
+      </section></div>
     </footer>
 
     <script>

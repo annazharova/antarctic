@@ -51,6 +51,8 @@
 .cruises__img {
   position: absolute;
   bottom: 0;
+  min-width: 100%;
+  height: 100%;
 }
 
 .cruises__item:hover .cruises__img {

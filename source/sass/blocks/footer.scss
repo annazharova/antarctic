@@ -1,7 +1,10 @@
 .footer {
+  background-color: $color-default-black;
+}
+
+.footer__wrapper {
   min-height: 138px;
   color: $color-default-white;
-  background-color: $color-default-black;
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   column-gap: 25px;

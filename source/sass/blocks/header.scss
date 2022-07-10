@@ -2,10 +2,6 @@
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-color: $color-default-black;
-  min-height: 650px;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 35px;
   background-size: cover;
   background-position: center center;
 
@@ -37,11 +33,23 @@
   }
 }
 
+.header__wrapper {
+  min-height: 650px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
 .header__logo {
   fill: $color-default-white;
 
   @media (max-width: $vp-tablet) {
     width: 38px;
     height: 20px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    margin-top: 0;
   }
 }

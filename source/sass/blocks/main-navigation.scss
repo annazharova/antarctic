@@ -10,10 +10,10 @@
   display: grid;
   flex-direction: row;
   justify-content: flex-end;
-
-  // @media (max-width: $vp-tablet) {
-    grid-template-columns: max-content max-content max-content max-content;;
-  // }
+  grid-template-columns: max-content max-content max-content max-content;
+  margin-top: -9px;
+  margin-right: -9px;
+  column-gap: 1px;
 
   @media (max-width: $vp-mobile) {
     display: block;

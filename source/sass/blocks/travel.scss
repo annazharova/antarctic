@@ -1,5 +1,5 @@
 .travel {
-  margin-top: 470px;
+  margin-top: 398px;
   display: grid;
   grid-template-columns: 512px 560px;
   column-gap: 88px;
@@ -29,8 +29,8 @@
 }
 
 .travel__title {
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 
   @media (max-width: $vp-tablet) {
     margin-bottom: 20px;

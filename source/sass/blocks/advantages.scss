@@ -34,8 +34,8 @@
   font-size: 28px;
   line-height: 150%;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding-top: 110px;
+  padding-bottom: 50px;
   margin: 0;
 
   @media (max-width: $vp-tablet) {
@@ -69,6 +69,8 @@
 .advantages__item {
   background-color: $color-default-white;
   padding: 30px;
+  padding-top: 0;
+  padding-bottom: 25px;
 
   @media (max-width: $vp-tablet) {
     padding: 20px;
@@ -78,13 +80,16 @@
 
 .advantages__item .text {
   margin-bottom: 0;
+  margin-top: 9px;
 }
 
 .advantages__title {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  padding-top: 50px;
+  padding-top: 95px;
+  margin: 0;
+  margin-top: -15px;
 
   @media (max-width: $vp-mobile) {
     margin: 0;

@@ -2,6 +2,7 @@
   padding-right: 118px;
   padding-left: 118px;
   margin-bottom: 120px;
+  margin-top: 110px;
 
   @media (max-width: $vp-tablet) {
     padding-right: 60px;
@@ -11,8 +12,8 @@
 
 .cruises .subtitle {
   text-align: center;
-  margin-top: 120px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+  margin-top: 0;
 
   @media (max-width: $vp-tablet) {
     margin-top: 100px;
@@ -57,4 +58,9 @@
 
 .cruises__item:hover .cruises__img {
   display: none;
+}
+
+
+.cruises__item:hover .cruise__title {
+  position: unset;
 }

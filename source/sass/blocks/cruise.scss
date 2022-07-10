@@ -1,0 +1,35 @@
+.cruise {
+  display: grid;
+  height: 100%;
+  padding: 25px 20px;
+}
+
+.cruise__title {
+  color: $color-default-white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.cruise__subtitle {
+  color: $color-default-white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.cruise__text {
+  color: $color-default-grey;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 0;
+}
+
+.cruise__button {
+  margin-top: 25px;
+  margin-bottom: 0;
+}

@@ -8,6 +8,10 @@
     padding-left: 60px;
     margin-top: 90px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin-top: 53px;
+  }
 }
 
 .cruises h2 {
@@ -23,8 +27,8 @@
   }
 
   @media (max-width: $vp-mobile) {
-    margin-top: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
   }
 }
 
@@ -36,6 +40,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $vp-mobile) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .cruises__item {

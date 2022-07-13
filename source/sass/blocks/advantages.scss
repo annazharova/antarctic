@@ -47,8 +47,9 @@
   }
 
   @media (max-width: $vp-mobile) {
-    padding-top: 65px;
-    padding-bottom: 40px;
+    padding-top: 57px;
+    padding-bottom: 30px;
+    font-size: 24px;
   }
 }
 
@@ -109,7 +110,7 @@
   }
 
   @media (max-width: $vp-mobile) {
-    margin: 0;
-    padding-top: 35px;
+    padding-top: 106px;
+    margin-top: -55px;
   }
 }

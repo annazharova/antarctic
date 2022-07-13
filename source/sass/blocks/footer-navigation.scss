@@ -1,3 +1,8 @@
+.footer-navigation {
+  @media (max-width: $vp-mobile) {
+    margin-top: 15px;
+  }
+}
 .footer-navigation__list {
   list-style: none;
   padding: 0;
@@ -7,6 +12,12 @@
 
   @media (max-width: $vp-mobile) {
     flex-direction: column;
+  }
+}
+
+.footer-navigation__item {
+  @media (max-width: $vp-mobile) {
+    margin-bottom: 7px;
   }
 }
 
@@ -38,6 +49,6 @@
   }
 
   @media (max-width: $vp-mobile) {
-    margin-left: -16px;
+    margin-left: -12px;
   }
 }

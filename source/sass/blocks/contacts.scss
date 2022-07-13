@@ -15,13 +15,17 @@
   @media (max-width: $vp-mobile) {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 65px;
     margin-bottom: 65px;
+    margin-top: 45px;
   }
 }
 
 .contacts__description {
   place-self: center;
+
+  @media (max-width: $vp-mobile) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__lead {

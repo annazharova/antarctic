@@ -138,6 +138,8 @@
   background-image: url("../img/svg/menu-open.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+  margin-right: -3px;
+  margin-top: 1px;
 
   @media (min-width: $vp-mobile) {
     display: none;

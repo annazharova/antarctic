@@ -11,7 +11,8 @@
   }
 
   @media (max-width: $vp-mobile) {
-    margin-left: -12px;
+    margin-left: -14px;
+    align-self: start;
   }
 }
 

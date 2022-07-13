@@ -8,6 +8,10 @@
   flex-direction: row;
   margin-right: -14px;
 
+  @media (max-width: $vp-tablet) {
+  margin-right: -10px;
+  }
+
   @media (max-width: $vp-mobile) {
     margin-left: -12px;
   }
@@ -28,7 +32,7 @@
   }
 
   @media (max-width: $vp-tablet) {
-    padding: 12px;
+    padding: 11px;
   }
 }
 
@@ -37,4 +41,5 @@
 
   @media (max-width: $vp-tablet) {
     height: 16px;
+    width: 16px;
   }}

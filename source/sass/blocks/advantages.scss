@@ -40,7 +40,10 @@
   margin: 0;
 
   @media (max-width: $vp-tablet) {
-    padding-top: 100px;
+    padding-top: 90px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 150%;
   }
 
   @media (max-width: $vp-mobile) {
@@ -85,6 +88,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
+
+  @media (max-width: $vp-tablet) {
+    margin-top: 12px;
+  }
 }
 
 .advantages h3 {
@@ -94,6 +101,12 @@
   padding-top: 95px;
   margin: 0;
   margin-top: -15px;
+
+  @media (max-width: $vp-tablet) {
+    margin-top: -55px;
+    padding-top: 105px;
+    line-height: 140%;
+  }
 
   @media (max-width: $vp-mobile) {
     margin: 0;

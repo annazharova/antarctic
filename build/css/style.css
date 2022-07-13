@@ -840,6 +840,9 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .main-navigation__list {
@@ -1183,6 +1186,7 @@ button,
   background-position: center center;
   min-height: 555px;
   background-color: #f9fbfd;
+  margin-top: 120px;
 }
 
 .booking__wrapper {
@@ -1245,6 +1249,7 @@ button,
   line-height: 150%;
   margin-top: 0;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .booking input {
@@ -1310,7 +1315,6 @@ button,
 .cruises {
   padding-right: 118px;
   padding-left: 118px;
-  margin-bottom: 120px;
   margin-top: 110px;
 }
 
@@ -1535,18 +1539,24 @@ button,
 
   .header {
     background-image: url("../img/header-tablet.png");
-    padding-top: 30px;
+    padding-top: 23px;
+    height: 638px;
+  }
+
+  .header__wrapper {
+    padding-top: 0;
   }
 
   .header__logo {
     width: 38px;
     height: 20px;
-    margin-top: 10px;
+    margin-top: 7px;
   }
 
   .page h1 {
     padding-left: 0;
     font-size: 50px;
+    padding-top: 26px;
   }
 
   .page h1 ~ p {
@@ -1555,8 +1565,16 @@ button,
     line-height: 22px;
   }
 
+  .main-navigation__list {
+    -webkit-column-gap: 3px;
+    -moz-column-gap: 3px;
+    column-gap: 3px;
+  }
+
   .main-navigation__link {
     font-size: 14px;
+    padding-right: 11px;
+    padding-left: 11px;
   }
 
   .travel {
@@ -1565,21 +1583,29 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 92px;
+    margin-top: 375px;
   }
 
   .travel h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: -10px;
     font-size: 26px;
     line-height: 140%;
     max-width: 205px;
   }
 
+  .footer__wrapper {
+    min-height: 120px;
+    -webkit-column-gap: 13px;
+    -moz-column-gap: 13px;
+    column-gap: 13px;
+  }
+
   .footer__logo {
     width: 38px;
     height: 20px;
-    margin-top: 10px;
+    margin-top: 2px;
   }
 
   .footer-navigation__link {
@@ -1588,12 +1614,17 @@ button,
     padding: 12px;
   }
 
+  .social__list {
+    margin-right: -10px;
+  }
+
   .social__link {
-    padding: 12px;
+    padding: 11px;
   }
 
   .social__img {
     height: 16px;
+    width: 16px;
   }
 
   .advantages {
@@ -1602,7 +1633,10 @@ button,
   }
 
   .advantages h2 {
-    padding-top: 100px;
+    padding-top: 90px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 150%;
   }
 
   .advantages__list {
@@ -1616,9 +1650,20 @@ button,
     padding-right: 15px;
   }
 
+  .advantages__item p {
+    margin-top: 12px;
+  }
+
+  .advantages h3 {
+    margin-top: -55px;
+    padding-top: 105px;
+    line-height: 140%;
+  }
+
   .booking {
     background-image: url("../img/booking-tablet.png");
     min-height: 805px;
+    margin-top: 100px;
   }
 
   .booking__wrapper {
@@ -1633,14 +1678,15 @@ button,
   .booking p {
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
   }
 
   .booking h2 {
     font-size: 34px;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+    margin-top: 87px;
   }
 
   .booking form {
@@ -1649,13 +1695,18 @@ button,
     place-self: center;
   }
 
+  .booking .button {
+    margin-top: 20px;
+  }
+
   .cruises {
     padding-right: 60px;
     padding-left: 60px;
+    margin-top: 90px;
   }
 
   .cruises h2 {
-    margin-top: 100px;
+    font-size: 26px;
   }
 
   .cruises__item {
@@ -1664,9 +1715,18 @@ button,
     width: 309px;
   }
 
+  .cruise {
+    padding: 27px 35px;
+  }
+
+  .cruise h3 {
+    bottom: 28px;
+    left: 35px;
+  }
+
   .contacts {
-    -ms-grid-columns: 50% 50%;
-    grid-template-columns: 50% 50%;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -1674,14 +1734,13 @@ button,
     margin-bottom: 100px;
   }
 
-  .contacts__map {
-    min-width: 324px;
-    height: 335px;
+  .contacts__lead {
+    margin-top: 10px;
   }
 
   .contacts__map {
-    min-width: 290px;
-    height: 316px;
+    min-width: 324px;
+    height: 335px;
   }
 }
 
@@ -1876,6 +1935,11 @@ button,
     flex-direction: column-reverse;
     margin-top: 65px;
     margin-bottom: 65px;
+  }
+
+  .contacts__map {
+    min-width: 290px;
+    height: 316px;
   }
 }
 

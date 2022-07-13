@@ -8,7 +8,8 @@
   @media (max-width: $vp-tablet) {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 92px;
+    margin-top: 375px;
   }
 
   @media (max-width: $vp-mobile) {
@@ -40,7 +41,7 @@
   line-height: 150%;
 
   @media (max-width: $vp-tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: -10px;
     font-size: 26px;
     line-height: 140%;

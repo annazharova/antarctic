@@ -2,12 +2,6 @@
   cursor: pointer;
 }
 
-.custom-checkbox > input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
 .custom-checkbox > span {
   display: inline-flex;
   align-items: center;
@@ -27,12 +21,6 @@
   background-position: center center;
   background-size: 50% 50%;
   background-color: transparent;
-
-  // @media (min-width: @tablet-width) {
-  //   width: 52px;
-  //   height: 52px;
-  //   box-sizing: border-box;
-  // }
 }
 
 .custom-checkbox > input:not(:disabled) + span:hover::before,
@@ -50,10 +38,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 10px;
-
-  // @media (min-width: @tablet-width) {
-  //   background-size: 33px;
-  // }
 }
 
 .custom-checkbox > input:disabled + span::before {

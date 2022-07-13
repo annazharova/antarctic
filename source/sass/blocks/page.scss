@@ -1,4 +1,44 @@
-.page {}
+.page h1  {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: $color-default-white;
+  margin-top: -400px;
+  padding-left: 95px;
+  padding-top: 18px;
 
-.page__body {
+  @media (max-width: $vp-tablet) {
+    padding-left: 0;
+    font-size: 50px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 50px;
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: -350px;
+    width: 265px;
+  }
+}
+
+.page h1 ~ p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-default-white;
+  padding-left: 95px;
+  margin-top: -23px;
+
+  @media (max-width: $vp-tablet) {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 16px;
+    line-height: 22px;
+    width: 200px
+  }
 }

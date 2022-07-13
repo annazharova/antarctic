@@ -1,5 +1,6 @@
 .advantages {
   background-image: url("../img/advantages.png");
+  background-color: #dae7f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -29,7 +30,7 @@
   }
 }
 
-.advantages .subtitle {
+.advantages h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
@@ -78,12 +79,15 @@
   }
 }
 
-.advantages__item .text {
+.advantages__item p {
   margin-bottom: 0;
   margin-top: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
 }
 
-.advantages__title {
+.advantages h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;

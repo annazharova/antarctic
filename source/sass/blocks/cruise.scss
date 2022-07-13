@@ -4,7 +4,7 @@
   padding: 27px 25px;
 }
 
-.cruise__title {
+.cruise h3 {
   z-index: 2;
   position: absolute;
   bottom: 23px;
@@ -18,7 +18,7 @@
   margin: 0;
 }
 
-.cruise__subtitle {
+.cruise h4 {
   color: $color-default-white;
   font-weight: 500;
   font-size: 14px;
@@ -27,7 +27,7 @@
   margin-bottom: -4px;
 }
 
-.cruise__text {
+.cruise p {
   color: $color-default-grey;
   font-weight: 400;
   font-size: 14px;
@@ -37,7 +37,7 @@
 }
 
 .cruise__button {
-   margin-top: 20px;
+  margin-top: 20px;
   margin-bottom: 5px;
   width: 100%;
 }

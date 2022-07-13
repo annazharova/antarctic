@@ -18,8 +18,12 @@
   }
 }
 
-.travel__text {
+.travel p {
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-default-black;
 
   @media (max-width: $vp-mobile) {
     font-weight: 400;
@@ -28,9 +32,12 @@
   }
 }
 
-.travel__title {
+.travel h2 {
   margin-top: 10px;
   margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
 
   @media (max-width: $vp-tablet) {
     margin-bottom: 20px;

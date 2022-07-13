@@ -1,4 +1,4 @@
-.form {
+.booking form {
   width: 403px;
   min-height: 455px;
   height: max-content;
@@ -19,7 +19,7 @@
   }
 }
 
-.form__lead {
+.booking form ~ p {
   color: $color-default-white;
   font-weight: 500;
   font-size: 18px;

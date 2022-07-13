@@ -756,6 +756,7 @@ button,
   background-repeat: no-repeat;
   background-position: 50%;
   z-index: 2;
+  margin-right: -10px;
 }
 
 .main-navigation--is-close .header__logo {
@@ -768,8 +769,8 @@ button,
   fill: #011c40;
   z-index: 2;
   position: absolute;
-  top: 15px;
-  right: 230px;
+  top: 20px;
+  right: 225px;
 }
 
 .main-navigation--is-close .main-navigation__toggle {
@@ -1641,7 +1642,8 @@ button,
     right: 0;
     width: 285px;
     height: 500px;
-    padding-top: 75px;
+    padding-top: 83px;
+    padding-left: 3px;
   }
 
   .main-navigation__item {

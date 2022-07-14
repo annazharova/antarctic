@@ -389,6 +389,7 @@ template {
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/montserrat-400.woff2") format("woff2"), url("../fonts/montserrat-400.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -396,6 +397,7 @@ template {
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/montserrat-500.woff2") format("woff2"), url("../fonts/montserrat-500.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -403,6 +405,7 @@ template {
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/montserrat-600.woff2") format("woff2"), url("../fonts/montserrat-600.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -410,6 +413,7 @@ template {
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/montserrat-700.woff2") format("woff2"), url("../fonts/montserrat-700.woff") format("woff");
+  font-display: swap;
 }
 
 *,
@@ -672,6 +676,12 @@ button,
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.main-navigation a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .main-navigation__list {
@@ -1012,7 +1022,7 @@ button,
 
 .booking {
   background-image: url("../img/booking.png");
-  background-color: #e2f3fd;
+  background-color: #c9e3f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1270,6 +1280,7 @@ button,
 .custom-checkbox > span::before {
   content: "";
   display: inline-block;
+  vertical-align: baseline;
   width: 18px;
   height: 18px;
   -ms-flex-negative: 0;

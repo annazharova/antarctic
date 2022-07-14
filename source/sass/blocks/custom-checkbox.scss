@@ -11,6 +11,7 @@
 .custom-checkbox > span::before {
   content: "";
   display: inline-block;
+  vertical-align: baseline;
   width: 18px;
   height: 18px;
   flex-shrink: 0;

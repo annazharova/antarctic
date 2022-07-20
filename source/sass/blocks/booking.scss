@@ -117,7 +117,8 @@
   }
 
   @media (max-width: $vp-mobile) {
-    width: 290px;
+    width: 100%;
+    max-width: 403px;
     min-height: 460px;
     padding: 40px 30px;
     padding-top: 35px;

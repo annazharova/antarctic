@@ -22,7 +22,7 @@
 
   @media (max-width: $vp-mobile) {
     background-image: url("../img/advantages-mobile.webp");
-    min-height: 997px;
+    height: min-content;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/advantages-mobile@2x.webp");
@@ -68,6 +68,7 @@
   @media (max-width: $vp-mobile) {
     grid-template-columns: 1fr;
     row-gap: 30px;
+    padding-bottom: 65px;
   }
 }
 

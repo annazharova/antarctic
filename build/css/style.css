@@ -811,6 +811,10 @@ button,
   display: block;
 }
 
+.main-navigation__logo {
+  cursor: unset;
+}
+
 .travel {
   margin-top: 398px;
   display: -ms-grid;
@@ -868,6 +872,10 @@ button,
 
 .footer__logo {
   fill: #f9fbfd;
+}
+
+.footer__link {
+  cursor: unset;
 }
 
 .footer-navigation__list {
@@ -1383,7 +1391,7 @@ button,
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1023px) {
   .container {
     padding-right: 45px;
     padding-left: 45px;
@@ -1596,7 +1604,7 @@ button,
   }
 }
 
-@media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1365px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1365px) and (min-resolution: 2dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .header {
     background-image: none;
     background-image: url("../img/header-tablet@2x.webp");
@@ -1755,7 +1763,9 @@ button,
 
   .advantages {
     background-image: url("../img/advantages-mobile.webp");
-    min-height: 997px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
 
   .advantages h2 {
@@ -1768,6 +1778,7 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     row-gap: 30px;
+    padding-bottom: 65px;
   }
 
   .advantages h3 {
@@ -1803,7 +1814,8 @@ button,
   }
 
   .booking form {
-    width: 290px;
+    width: 100%;
+    max-width: 403px;
     min-height: 460px;
     padding: 40px 30px;
     padding-top: 35px;

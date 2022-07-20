@@ -319,21 +319,21 @@
             <p>Оставьте заявку и мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
             <label>
               <span class="visually-hidden">Введите имя</span>
-              <input type="text" name="name" id="name" placeholder="Имя">
+              <input type="text" name="name" id="name" placeholder="Имя" required>
             </label>
             <label>
               <span class="visually-hidden">Введите телефон</span>
-              <input type="tel" name="phone" id="phone" placeholder="Телефон">
+              <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="Телефон" required>
             </label>
             <label>
               <span class="visually-hidden">Введите e-mail</span>
-              <input type="email" name="email" id="email" placeholder="Email">
+              <input type="email" name="email" id="email" placeholder="Email" required>
             </label>
             <label class="custom-checkbox">
-              <input type="checkbox" name="agree" checked>
+              <input type="checkbox" name="agree" checked required>
               <span>Я согласен на&nbsp;обработку моих персональных данных</span>
             </label>
-            <input class="button" type="button" value="Оставить заявку">
+            <input class="button" type="submit" value="Оставить заявку">
           </form>
         </div>
       </section>

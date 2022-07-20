@@ -1,4 +1,12 @@
-.page h1  {
+.page__body {
+  display: flex;
+  flex-direction: column;
+}
+.page__main {
+  flex: 1 0 auto;
+}
+
+.page h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 54px;

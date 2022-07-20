@@ -1,5 +1,5 @@
 .booking {
-  background-image: url("../img/booking.png");
+  background-image: url("../img/booking.webp");
   background-color: #c9e3f6;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,26 +9,26 @@
   margin-top: 120px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/booking@2x.png");
+    background-image: url("../img/booking@2x.webp");
   }
 
   @media (max-width: $vp-tablet) {
-    background-image: url("../img/booking-tablet.png");
+    background-image: url("../img/booking-tablet.webp");
     min-height: 805px;
     margin-top: 100px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/booking-tablet@2x.png");
+      background-image: url("../img/booking-tablet@2x.webp");
     }
   }
 
   @media (max-width: $vp-mobile) {
-    background-image: url("../img/booking-mobile.png");
+    background-image: url("../img/booking-mobile.webp");
     margin-top: 65px;
     min-height: 760px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/booking-mobile@2x.png");
+      background-image: url("../img/booking-mobile@2x.webp");
     }
   }
 }

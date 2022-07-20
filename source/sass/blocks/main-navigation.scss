@@ -112,7 +112,7 @@
   z-index: 2;
   margin-right: -10px;
 
-  @media (min-width: $vp-mobile) {
+  @media (min-width: $vp-mobile + 1) {
     display: none;
   }
 }
@@ -146,12 +146,12 @@
   margin-right: -3px;
   margin-top: 1px;
 
-  @media (min-width: $vp-mobile) {
+  @media (min-width: $vp-mobile + 1) {
     display: none;
   }
 }
 
-@media (max-width: $vp-mobile - 1) {
+@media (max-width: $vp-mobile) {
   .main-navigation--is-close .main-navigation__list {
     display: none;
 

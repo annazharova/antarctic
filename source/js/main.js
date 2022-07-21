@@ -47,6 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 let navMain = document.querySelector('.main-navigation');
 let navToggle = document.querySelector('.main-navigation__toggle');
+let body = document.querySelector('.page__body');
 
 navMain.classList.remove('main-navigation--nojs');
 
@@ -54,9 +55,11 @@ navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-navigation--is-open')) {
     navMain.classList.remove('main-navigation--is-open');
     navMain.classList.add('main-navigation--is-close');
+    body.style.overflowY = 'unset';
   } else {
     navMain.classList.add('main-navigation--is-open');
     navMain.classList.remove('main-navigation--is-close');
+    body.style.overflowY = 'hidden';
   }
 });
 
@@ -72,5 +75,8 @@ for (let anchor of anchors) {
       behavior: 'smooth',
       block: 'start'
     })
+    body.style.overflowY = 'unset';
+    navMain.classList.remove('main-navigation--is-open');
+    navMain.classList.add('main-navigation--is-close');
   })
 }

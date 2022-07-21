@@ -50,8 +50,9 @@
 .cruises__item {
   background-color: $color-default-black;
   box-sizing: border-box;
-  min-height: 386px;
+  height: 386px;
   width: 260px;
+  overflow-y: scroll;
 
   position: relative;
 
@@ -68,11 +69,13 @@
   height: 100%;
 }
 
-.cruises__item:hover .cruises__img {
+.cruises__item:hover .cruises__img,
+.cruises__item:focus-within .cruises__img {
   display: none;
 }
 
 
-.cruises__item:hover .cruise h3 {
+.cruises__item:hover .cruise h3,
+.cruises__item:focus-within .cruise h3 {
   position: unset;
 }

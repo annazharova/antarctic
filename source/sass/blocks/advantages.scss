@@ -59,15 +59,14 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
+  gap: 40px;
 
   @media (max-width: $vp-tablet) {
-    column-gap: 30px;
+    gap: 30px;
   }
 
   @media (max-width: $vp-mobile) {
     grid-template-columns: 1fr;
-    row-gap: 30px;
     padding-bottom: 65px;
   }
 }
@@ -94,6 +93,9 @@
   @media (max-width: $vp-tablet) {
     margin-top: 12px;
   }
+  @media (max-width: $vp-mobile) {
+    margin-top: 9px;
+  }
 }
 
 .advantages h3 {
@@ -112,7 +114,7 @@
 
   @media (max-width: $vp-mobile) {
     padding-top: 106px;
-    margin-top: -55px;
+    margin-top: -56px;
     width: 170px;
   }
 }

@@ -63,6 +63,15 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+let overlay = document.querySelector('.header');
+
+overlay.addEventListener('click', function() {
+  if (navMain.classList.contains('main-navigation--is-open')) {
+  navMain.classList.add('main-navigation--is-open');
+  navMain.classList.remove('main-navigation--is-close');
+  }
+});
+
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -80,3 +89,4 @@ for (let anchor of anchors) {
     navMain.classList.add('main-navigation--is-close');
   })
 }
+

@@ -151,6 +151,13 @@ navToggle.addEventListener('click', function () {
     body.style.overflowY = 'hidden';
   }
 });
+var overlay = document.querySelector('.header');
+overlay.addEventListener('click', function () {
+  if (navMain.classList.contains('main-navigation--is-open')) {
+    navMain.classList.add('main-navigation--is-open');
+    navMain.classList.remove('main-navigation--is-close');
+  }
+});
 var anchors = document.querySelectorAll('a[href*="#"]');
 
 var _iterator = _createForOfIteratorHelper(anchors),

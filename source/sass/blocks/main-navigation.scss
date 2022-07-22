@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   height: fit-content;
 }
+
 .main-navigation a {
   width: fit-content;
 }
@@ -32,8 +33,9 @@
     width: 293px;
     padding-top: 83px;
     padding-left: 3px;
-    height: 100vh;
+    height: 105vh;
     z-index: 2;
+    overflow-y: scroll;
   }
 }
 
@@ -182,8 +184,12 @@
   position: relative;
 }
 
-.main-navigation--nojs .main-navigation__item {
+.main-navigation--nojs ul.main-navigation__list {
   display: block;
+  position: unset;
+  height: fit-content;
+  margin-top: -20px;
+  padding-top: 0;
 }
 
 .main-navigation__logo {

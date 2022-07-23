@@ -48,28 +48,34 @@ window.addEventListener('DOMContentLoaded', () => {
 let navMain = document.querySelector('.main-navigation');
 let navToggle = document.querySelector('.main-navigation__toggle');
 let body = document.querySelector('.page__body');
+let overlay = document.querySelector('.overlay');
 
 navMain.classList.remove('main-navigation--nojs');
 
+const closeMenu = () => {
+  navMain.classList.remove('main-navigation--is-open');
+  navMain.classList.add('main-navigation--is-close');
+  body.style.overflowY = 'unset';
+  overlay.style.display = "none";
+};
+
+const openMenu = () => {
+  navMain.classList.add('main-navigation--is-open');
+  navMain.classList.remove('main-navigation--is-close');
+  body.style.overflowY = 'hidden';
+  overlay.style.display = "block";
+};
+
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-navigation--is-open')) {
-    navMain.classList.remove('main-navigation--is-open');
-    navMain.classList.add('main-navigation--is-close');
-    body.style.overflowY = 'unset';
+    closeMenu();
   } else {
-    navMain.classList.add('main-navigation--is-open');
-    navMain.classList.remove('main-navigation--is-close');
-    body.style.overflowY = 'hidden';
+    openMenu();
   }
 });
 
-let overlay = document.querySelector('.header');
-
-overlay.addEventListener('click', function() {
-  if (navMain.classList.contains('main-navigation--is-open')) {
-  navMain.classList.add('main-navigation--is-open');
-  navMain.classList.remove('main-navigation--is-close');
-  }
+overlay.addEventListener ('click', function() {
+  closeMenu();
 });
 
 const anchors = document.querySelectorAll('a[href*="#"]')
@@ -77,16 +83,12 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
   anchor.addEventListener('click', function(e) {
     e.preventDefault()
-
     const blockID = anchor.getAttribute('href').substr(1)
-
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     })
-    body.style.overflowY = 'unset';
-    navMain.classList.remove('main-navigation--is-open');
-    navMain.classList.add('main-navigation--is-close');
+    closeMenu();
   })
 }
 
